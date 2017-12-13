@@ -244,7 +244,8 @@ extract_fun = function(name, script) {
   x[i:j]
 }
 ```
-```{r eval=FALSE, tidy=FALSE, code=extract_fun('build_chapter', '../../R/html.R')}
+
+```{r eval=FALSE, tidy=FALSE, code=extract_fun('build_chapter', './R/html.R')}
 ```
 
 Basically, this function takes a number of components like the HTML head, the table of contents, the chapter body, and so on, and it is expected to return a character string which is the HTML source of a complete HTML page. You may manipulate all components in this function using text-processing functions like `gsub()` and `paste()`.
